@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qr Code</title>
+    <link href="qrCode.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col-6 mt-4">
+        <div class="form1 ms-3 mt-5 me-3 ms-lg-5">
+          <h5>Create Qr Code</h5>
+          <p class="mb-2">enter your url ot text</p>
+          <input type="text" class="mt-1" id="inputQr" /><br /><br />
+
+          <div id="imgBox" class="mb-3 mt-3">
+            <img src="" alt="" id="qrImg" />
+          </div>
+
+          <p class="text-danger err">please enter text or url</p>
+          <button class="btnGenerateQrCode rounded-1">Generate Qr Code</button>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12">
+        <img src="images/qrCode3.jpg" class="w-100" />
+      </div>
+    </div>
+
+    <script src="qrCode.js"></script>
+  </body>
+</html>

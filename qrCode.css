@@ -1,0 +1,67 @@
+body {
+  overflow-x: hidden;
+}
+
+.form1 {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgb(145, 145, 145);
+  height: 32rem;
+  width: 25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+
+input {
+  width: 15rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0px 0px 5px rgb(139, 139, 139);
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  padding: 1rem;
+  border-radius: 5rem;
+  border: none;
+  background-color: rgb(28, 1, 183);
+  color: rgb(255, 255, 255);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+#imgBox {
+  width: 200px;
+  border-radius: 1px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+#imgBox img {
+  width: 100%;
+  padding: 10px;
+}
+
+#imgBox.show {
+  max-height: 200px;
+  border: 1px solid rgb(5, 216, 167);
+}
+
+#imgBox.hide {
+  display: none;
+}
+
+.err {
+  margin-top: 0.2rem;
+  display: none;
+}
